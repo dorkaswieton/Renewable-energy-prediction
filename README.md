@@ -1,64 +1,75 @@
-# 🌱 Predicting Renewable Electricity Production for Sustainable Energy Planning
+# 🌱 Forecasting Renewable Electricity Production for Sustainable Energy Planning
 
-Renewable electricity generation is essential for reducing greenhouse gas emissions and supporting sustainable development. However, renewable energy production differs significantly across countries due to economic, environmental, and infrastructure-related factors.
+This project builds regression machine learning models to predict renewable electricity production using country-level energy and environmental indicators. The goal is to support sustainability planning, improve understanding of renewable energy trends, and explore how energy-related variables influence renewable electricity generation.
 
-This project explores how regression machine learning models can predict renewable electricity production using country-level energy and environmental indicators. The goal is to support more informed sustainability planning and improve understanding of the factors that influence renewable energy generation.
+---
 
-## Research Question and Hypothesis
+# Problem and Hypothesis
 
-**How do electricity prices and country-level energy indicators influence renewable electricity production?**
+This project predicts renewable electricity production using features such as electricity generation, non-hydro renewable energy indicators, renewable energy statistics, and country-level energy measurements.
 
-Electricity prices and country-level energy indicators are expected to significantly influence renewable electricity production.
-It is hypothesized that regression machine learning models will be able to predict renewable electricity generation with reasonable accuracy using economic and energy-related indicators.
-Additionally, tree-based models such as Random Forest Regression are expected to outperform linear models because relationships between energy production and economic indicators may be nonlinear.
+My hypothesis is that electricity generation and renewable energy indicators significantly influence renewable electricity production. I also expect Random Forest Regression to outperform Linear Regression because relationships between energy production variables may be nonlinear and more complex than simple linear patterns.
 
-## 📊 Dataset
-- **Source:**
-  https://www.kaggle.com/code/khushipitroda/renewable-energy
-  
-This project uses a renewable electricity dataset containing country-level energy indicators associated with renewable electricity generation.
+---
 
-The dataset includes renewable electricity statistics collected across different countries and is used to predict renewable electricity production through regression machine learning models.
+# Dataset
 
-**The dataset was selected because:**
-- It directly relates to environmental sustainability and clean energy
-- Renewable electricity forecasting is an important real-world challenge
-- The target variable is continuous, making it appropriate for regression analysis
-- The dataset contains measurable country-level indicators that may influence renewable electricity generation
+## Source
+Kaggle Renewable Energy Dataset  
+https://www.kaggle.com/code/khushipitroda/renewable-energy
 
-## 📌 Sustainability Relevance
+## What it contains
+The dataset contains country-level renewable electricity and energy-related indicators collected across multiple countries.
 
-Renewable energy is essential for reducing dependence on fossil fuels and lowering greenhouse gas emissions.
-
-**Machine learning models that can predict renewable electricity production may help organizations:**
-- Improve renewable energy planning
-- Support sustainable infrastructure development
-- Reduce dependence on non-renewable energy sources
-- Improve long-term energy forecasting
-- Support climate-conscious policy decisions
-
-## 🎯 Features and Target Variable
-The dataset contains country-level indicators related to renewable electricity production.
-
-**Independent Variables (Features)**
-Example features may include:
-- Country-level electricity indicators
-- Electricity prices
-- Renewable energy statistics
-- Energy consumption indicators
-- Country or regional energy measurements
-
-**Dependent Variable (Target)**
+### Target Variable
 - Renewable electricity production
 
-## ❗️ Ethical and Licensing Considerations
+### Example Features
+- Electricity generation indicators
+- Non-hydro renewable energy statistics
+- Renewable energy percentages
+- Country-level energy measurements
+- Electricity-related indicators
 
-This dataset does not contain personal or sensitive human data.
-However, renewable electricity predictions should be used as decision-support tools rather than replacements for expert energy planning systems.
-Incorrect predictions could potentially lead to inefficient energy planning or sustainability decisions if models are used without human oversight.
+---
 
-**The model may also be limited by:**
+# ⚙️ Installation
+
+```bash
+pip install -r requirements.txt
+
+# Usage
+Run the notebook:
+notebooks/regression_capstone.ipynb
+(or use jupyter notebook if preferred).
+
+The notebook will:
+Load and preprocess the renewable energy dataset
+Perform exploratory data analysis
+Generate visualizations and feature importance plots
+Train Linear Regression and Random Forest Regression models
+Evaluate model performance using regression metrics
+Save trained models and reports into the outputs folder
+
+# Folder Structure
+data/raw/ – Original renewable_energy.csv
+data/processed/ – Cleaned version
+notebooks/ – Main regression notebook
+outputs/models/ – Saved trained models showing model performance
+outputs/reports/ – Evaluation summaries.
+requirements.txt – Project dependencies
+README.md – Project documentation
+
+# Ethical and Sustainability Notes
+
+Predictions are intended to support sustainability planning and renewable energy analysis.
+The project does not use personal or sensitive human data. However, model predictions should be treated as decision-support tools rather than replacements for expert analysis or government energy planning systems.
+
+Potential limitations include:
 - Regional economic differences
-- Changing energy policies
 - Missing environmental variables
-- Differences in renewable energy infrastructure across countries
+- Policy changes affecting renewable energy production
+- Limited dataset size
+
+#Dependencies
+Listed in requirements.txt
