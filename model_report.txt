@@ -1,0 +1,17 @@
+Renewable Energy Prediction - Model Report
+==========================================
+
+Models Used:
+- Linear Regression
+- Random Forest Regression
+
+Project Goal:
+Predict renewable electricity production using energy-related features.
+
+Key Findings:
+- Random Forest Regression performed better than Linear Regression.
+- Electricity generation and non-hydro renewables were important predictors.
+- Feature relationships showed strong positive correlations.
+
+Conclusion:
+Machine learning models can help analyze and predict renewable electricity production trends.
