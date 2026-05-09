@@ -38,38 +38,51 @@ The dataset contains country-level renewable electricity and energy-related indi
 ```bash
 pip install -r requirements.txt
 
-# Usage
+```
+
+
+# 👨‍💻 Usage
+
 Run the notebook:
+
+```bash
 notebooks/regression_capstone.ipynb
-(or use jupyter notebook if preferred).
+```
+
+(or use `jupyter notebook` if preferred).
 
 The notebook will:
-Load and preprocess the renewable energy dataset
-Perform exploratory data analysis
-Generate visualizations and feature importance plots
-Train Linear Regression and Random Forest Regression models
-Evaluate model performance using regression metrics
-Save trained models and reports into the outputs folder
 
-# Folder Structure
-data/raw/ – Original renewable_energy.csv
-data/processed/ – Cleaned version
-notebooks/ – Main regression notebook
-outputs/models/ – Saved trained models showing model performance
-outputs/reports/ – Evaluation summaries.
-requirements.txt – Project dependencies
-README.md – Project documentation
+- Load and preprocess the renewable energy dataset
+- Perform exploratory data analysis
+- Generate visualizations and feature importance plots
+- Train Linear Regression and Random Forest Regression models
+- Evaluate model performance using regression metrics
+- Save trained models and reports into the outputs folder
 
-# Ethical and Sustainability Notes
+# 📂 Folder Structure
+
+- `data/raw/` – Original renewable_energy.csv
+- `data/processed/` – Cleaned version
+- `notebooks/` – Main regression notebook
+- `outputs/models/` – Saved trained models showing model performance
+- `outputs/reports/` – Evaluation summaries
+- `requirements.txt` – Project dependencies
+- `README.md` – Project documentation
+
+# 📝 Ethical and Sustainability Notes
 
 Predictions are intended to support sustainability planning and renewable energy analysis.
+
 The project does not use personal or sensitive human data. However, model predictions should be treated as decision-support tools rather than replacements for expert analysis or government energy planning systems.
 
 Potential limitations include:
+
 - Regional economic differences
 - Missing environmental variables
 - Policy changes affecting renewable energy production
 - Limited dataset size
 
-#Dependencies
-Listed in requirements.txt
+# 🖇️ Dependencies
+
+Listed in `requirements.txt`
