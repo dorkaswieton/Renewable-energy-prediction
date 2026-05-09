@@ -4,21 +4,18 @@ This project builds regression machine learning models to predict renewable elec
 
 ---
 
-# Problem and Hypothesis
+## 📌 Problem & Hypothesis
 
-This project predicts renewable electricity production using features such as electricity generation, non-hydro renewable energy indicators, renewable energy statistics, and country-level energy measurements.
+This project predicts **renewable electricity production** using features such as electricity generation, non-hydro renewable energy indicators, renewable energy statistics, and country-level energy measurements.
 
-My hypothesis is that electricity generation and renewable energy indicators significantly influence renewable electricity production. I also expect Random Forest Regression to outperform Linear Regression because relationships between energy production variables may be nonlinear and more complex than simple linear patterns.
+**Hypothesis:** Electricity generation and renewable energy indicators significantly influence renewable electricity production. Random Forest Regression is expected to outperform Linear Regression because relationships between energy production variables may be non-linear and more complex than simple linear patterns.
 
 ---
 
-# Dataset
+## 📊 Dataset
 
-## Source
-Kaggle Renewable Energy Dataset  
-https://www.kaggle.com/code/khushipitroda/renewable-energy
+**Source:** [Kaggle — Renewable Energy Dataset](https://www.kaggle.com/code/khushipitroda/renewable-energy)
 
-## What it contains
 The dataset contains country-level renewable electricity and energy-related indicators collected across multiple countries.
 
 ### Target Variable
@@ -33,15 +30,15 @@ The dataset contains country-level renewable electricity and energy-related indi
 
 ---
 
-# ⚙️ Installation
+## ⚙️ Installation
 
 ```bash
 pip install -r requirements.txt
-
 ```
 
+---
 
-# 👨‍💻 Usage
+## 🚀 Usage
 
 Run the notebook:
 
@@ -49,40 +46,43 @@ Run the notebook:
 notebooks/regression_capstone.ipynb
 ```
 
-(or use `jupyter notebook` if preferred).
+Or open with Jupyter Notebook if preferred.
 
 The notebook will:
 
 - Load and preprocess the renewable energy dataset
 - Perform exploratory data analysis
-- Generate visualizations and feature importance plots
+- Generate visualisations and feature importance plots
 - Train Linear Regression and Random Forest Regression models
 - Evaluate model performance using regression metrics
 - Save trained models and reports into the outputs folder
 
-# 📂 Folder Structure
+---
 
-- `data/raw/` – Original renewable_energy.csv
-- `data/processed/` – Cleaned version
-- `notebooks/` – Main regression notebook
-- `outputs/models/` – Saved trained models showing model performance
-- `outputs/reports/` – Evaluation summaries
-- `requirements.txt` – Project dependencies
-- `README.md` – Project documentation
+## 📁 Folder Structure
+data/raw/            – Original renewable_energy.csv
+data/processed/      – Cleaned version
+notebooks/           – Main regression notebook
+outputs/models/      – Saved trained models and performance results
+outputs/reports/     – Evaluation summaries
+requirements.txt     – Project dependencies
+README.md            – Project documentation
 
-# 📝 Ethical and Sustainability Notes
+---
 
-Predictions are intended to support sustainability planning and renewable energy analysis.
+## ⚖️ Ethical & Sustainability Notes
 
-The project does not use personal or sensitive human data. However, model predictions should be treated as decision-support tools rather than replacements for expert analysis or government energy planning systems.
+Predictions are intended to support sustainability planning and renewable energy analysis. The project does not use personal or sensitive human data. However, model predictions should be treated as **decision-support tools** rather than replacements for expert analysis or government energy planning systems.
 
-Potential limitations include:
+**Potential limitations include:**
 
 - Regional economic differences
 - Missing environmental variables
 - Policy changes affecting renewable energy production
 - Limited dataset size
 
-# 🖇️ Dependencies
+---
 
-Listed in `requirements.txt`
+## 📦 Dependencies
+
+Listed in `requirements.txt`.
